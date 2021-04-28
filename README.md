@@ -9,3 +9,4 @@ This repository contains the projects of the 100 Days Of SwiftUI by Paul Hudson.
 | 5 | Rock, Paper, Scissors   | Mileston projects 1-3 | <img src="RockPaperScissors/screenshots/screenshot-1.png" width="200"> | Rock, paper, scissors game |
 | 6 | BetterRest   | CreateML, Stepper, DatePicker, DateComponents, DateFormatter, navigationBarItems() | <img src="BetterRest/screenshots/screenshot-1.png" width="200"> | App that uses ML to suggest bedtime |
 | 7 | WordScramble   | List, onAppear, Bundle, fatalError(), UITextChecker | <img src="WordScramble/screenshots/screenshot-1.png" width="200"> | WordScramble game |
+| 8 | MultiplicationTableEdutainment   | Mileston projects 4-6 | <img src="MultiplicationTableEdutainment/screenshots/screenshot-1.png" width="200"> | Multiplication Table practicing game |
