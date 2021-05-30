@@ -13,3 +13,4 @@ This repository contains the projects of the 100 Days Of SwiftUI by Paul Hudson.
 | 9 | iExpense   | UserDefaults, Codable, sheet(), onDelete(), @ObservedObject, EditButton | <img src="iExpense/screenshots/screenshot-1.png" width="200"> | Expense tracker app |
 | 10 | Moonshot   | GeometryReader, Generics, Codable, ScrollView, Navigation  | <img src="Moonshot/screenshots/screenshot-1.png" width="200"> | Apollo missions explorer app |
 | 11 | Drawing   | Shape, InsettableShape, Path, drawingGroup(), CGAffineTransform, ImagePaint, strokeBorder(), animatableData, AnimatablePair  | <img src="Drawing/screenshots/screenshot-1.png" width="200"> | Shapes, drawings challenge project |
+| 12 | Habitify   | Milestone projects 7-9  | <img src="Habitify/screenshots/screenshot-1.png" width="200"> | Basic habit tracker app |
