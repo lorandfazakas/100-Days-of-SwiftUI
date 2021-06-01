@@ -14,6 +14,7 @@
 		09321ED626656014009428F4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09321ED526656014009428F4 /* Order.swift */; };
 		09321ED9266562B3009428F4 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09321ED8266562B3009428F4 /* AddressView.swift */; };
 		09321EDC26656372009428F4 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09321EDB26656372009428F4 /* CheckoutView.swift */; };
+		09321EDF266651B8009428F4 /* OrderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09321EDE266651B8009428F4 /* OrderDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		09321ED526656014009428F4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		09321ED8266562B3009428F4 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		09321EDB26656372009428F4 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		09321EDE266651B8009428F4 /* OrderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				09321EC526650284009428F4 /* CupcakeCornerApp.swift */,
 				09321EC726650284009428F4 /* ContentView.swift */,
 				09321ED526656014009428F4 /* Order.swift */,
+				09321EDE266651B8009428F4 /* OrderDetails.swift */,
 				09321ED8266562B3009428F4 /* AddressView.swift */,
 				09321EDB26656372009428F4 /* CheckoutView.swift */,
 				09321EC926650287009428F4 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09321ED626656014009428F4 /* Order.swift in Sources */,
+				09321EDF266651B8009428F4 /* OrderDetails.swift in Sources */,
 				09321ED9266562B3009428F4 /* AddressView.swift in Sources */,
 				09321EDC26656372009428F4 /* CheckoutView.swift in Sources */,
 				09321EC826650284009428F4 /* ContentView.swift in Sources */,
