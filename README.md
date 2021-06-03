@@ -16,3 +16,4 @@ This repository contains the projects of the 100 Days Of SwiftUI by Paul Hudson.
 | 12 | Habitify   | Milestone projects 7-9  | <img src="Habitify/screenshots/screenshot-1.png" width="200"> | Basic habit tracker app |
 | 13 | CupcakeCorner   | URLSession, URLRequest, Codable, CodingKey, disabled()  | <img src="CupcakeCorner/screenshots/screenshot-1.png" width="200"> | Cupcake ordering app |
 | 14 | Bookworm   | Core Data, @Binding,  | <img src="Bookworm/screenshots/screenshot-1.png" width="200"> | App to keep track, rate and review books |
+| 14 | CoreDataProject   | Core Data  | <img src="CoreDataProject/screenshots/screenshot-1.png" width="200"> | Core Data deep dive |
