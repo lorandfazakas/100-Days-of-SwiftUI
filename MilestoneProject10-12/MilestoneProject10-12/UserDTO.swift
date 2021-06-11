@@ -1,13 +1,13 @@
 //
-//  User.swift
-//  MilestoneProject_9-12
+//  UserDTO.swift
+//  MilestoneProject10-12
 //
-//  Created by Lorand Fazakas on 2021. 06. 03..
+//  Created by Lorand Fazakas on 2021. 06. 04..
 //
 
 import Foundation
 
-struct User: Codable, Identifiable {
+struct UserDTO: Codable, Identifiable {
     var id: String
     var isActive: Bool
     var name: String
@@ -18,5 +18,5 @@ struct User: Codable, Identifiable {
     var about: String
     var registered: String
     var tags: [String]
-    var friends: [Friend]
+    var friends: [FriendDTO]
 }
