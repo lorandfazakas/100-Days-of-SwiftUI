@@ -19,3 +19,4 @@ This repository contains the projects of the 100 Days Of SwiftUI by Paul Hudson.
 | 14 | CoreDataProject   | Core Data  | <img src="CoreDataProject/screenshots/screenshot-1.png" width="200"> | Core Data deep dive |
 | 14 | Milestone Project 10-12   | Milestone Project 10-12  | <img src="MilestoneProject10-12/screenshots/screenshot-1.png" width="200"> | Fetching User and Friend data and navigate through them + CoreData|
 | 15 | Instafilter   | CoreImage, Custom binding, actionSheet, UIKit integration, ImagePicker  | <img src="Instafilter/screenshots/screenshot-1.png" width="200"> | App for applying filters on images|
+| 16 | BucketList   | Biometric Authentication, Comparable, MapKit, Writing to documents directory | <img src="BucketList/screenshots/screenshot-1.png" width="200"> | App for pinning places of interest|
