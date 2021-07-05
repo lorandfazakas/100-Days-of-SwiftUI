@@ -21,3 +21,4 @@ This repository contains the projects of the 100 Days Of SwiftUI by Paul Hudson.
 | 15 | Instafilter   | CoreImage, Custom binding, actionSheet, UIKit integration, ImagePicker  | <img src="Instafilter/screenshots/screenshot-1.png" width="200"> | App for applying filters on images|
 | 16 | BucketList   | Biometric Authentication, Comparable, MapKit, Writing to documents directory | <img src="BucketList/screenshots/screenshot-1.png" width="200"> | App for pinning places of interest|
 | 16 | Milestone Project 13-15   | Milestone Project 13-15 | <img src="MilestoneProject13-15/screenshots/screenshot-1.png" width="200"> | Saving contacts with picture and current location|
+| 17 | HotProspects   | TabView, Result, objectWillChange, Custom EnvironmentObject, map(), filter(), CI QRCode | <img src="HotProspects/screenshots/screenshot-1.png" width="200"> |  An app to track who you meet at conferences with QR code scanning|
