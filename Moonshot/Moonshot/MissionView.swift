@@ -17,14 +17,18 @@ struct MissionView: View {
     }
     
     var body: some View {
-        GeometryReader { geometry in
+        GeometryReader { fullView in
             ScrollView(.vertical) {
                 VStack {
-                    Image(self.mission.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: geometry.size.width * 0.7)
-                        .padding(.top)
+                    GeometryReader { geo in
+                        Image(self.mission.image)
+                            .resizable()
+                            .scaledToFit()
+                            .padding(.top)
+                            .frame(width: geo.size.width, height: geo.size.height)
+                            .scaleEffect(1 + geo.frame(in: .global).minY / 700)
+                    }
+                    .frame(maxWidth: fullView.size.width * 0.7 )
                     
                     Text(self.mission.formattedLaunchDate)
                         .padding()
