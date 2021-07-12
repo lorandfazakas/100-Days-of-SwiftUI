@@ -38,9 +38,10 @@ struct ContentView: View {
                         GeometryReader { geo in
                             HStack {
                                 Image(systemName: "\(word.count).circle")
+                                    .foregroundColor(Color(red: Double((geo.frame(in: .global).maxY) / 800 ), green: 0.6, blue: 0.4))
                                 Text(word)
                             }
-                            .offset(x: getOffset(listProxy: listGeo, itemProxy: geo))
+                            .offset(x: getOffset(listGeo: listGeo, itemGeo: geo))
                             .accessibilityElement(children: .ignore)
                             .accessibility(label: Text("\(word), \(word.count) letters"))
                         }
@@ -59,8 +60,13 @@ struct ContentView: View {
         }
     }
     
-    func getOffset(listProxy: GeometryProxy, itemProxy: GeometryProxy) -> CGFloat {
-        return max((itemProxy.frame(in: .global).minY - listProxy.frame(in: .global).minY) / listProxy.size.height * 100 - 45, 0)
+    func getOffset(listGeo: GeometryProxy, itemGeo: GeometryProxy) -> CGFloat {
+        return max((itemGeo.frame(in: .global).minY - listGeo.frame(in: .global).minY) / listGeo.size.height * 100 - 45, 0)
+    }
+    
+    func getColor(listGeo: GeometryProxy, itemGeo: GeometryProxy) -> Color {
+        let colorValue = Double(itemGeo.frame(in: .global).maxY / listGeo.frame(in: .global).maxY)
+        return Color(red: colorValue, green: colorValue, blue: colorValue)
     }
     
     func addNewWord() {
