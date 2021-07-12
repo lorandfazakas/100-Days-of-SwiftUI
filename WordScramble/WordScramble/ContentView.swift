@@ -26,31 +26,41 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-                VStack {
-                    TextField("Enter your word", text: $newWord, onCommit: addNewWord)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .autocapitalization(.none)
-                        .padding()
-
+            VStack {
+                TextField("Enter your word", text: $newWord, onCommit: addNewWord)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .autocapitalization(.none)
+                    .padding()
+                
+                
+                GeometryReader { listGeo in
                     List(usedWords, id: \.self) { word in
-                        HStack {
-                            Image(systemName: "\(word.count).circle")
-                            Text(word)
+                        GeometryReader { geo in
+                            HStack {
+                                Image(systemName: "\(word.count).circle")
+                                Text(word)
+                            }
+                            .offset(x: getOffset(listProxy: listGeo, itemProxy: geo))
+                            .accessibilityElement(children: .ignore)
+                            .accessibility(label: Text("\(word), \(word.count) letters"))
                         }
-                        .accessibilityElement(children: .ignore)
-                        .accessibility(label: Text("\(word), \(word.count) letters"))
                     }
-                    Text("Score: \(score)")
                 }
-                .navigationBarTitle(rootWord)
-                .navigationBarItems(leading: Button(action: startGame) {
-                    Text("New Game")
-                })
-                .onAppear(perform: startGame)
-                .alert(isPresented: $showingError) {
-                    Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
-                }
+                Text("Score: \(score)")
             }
+            .navigationBarTitle(rootWord)
+            .navigationBarItems(leading: Button(action: startGame) {
+                Text("New Game")
+            })
+            .onAppear(perform: startGame)
+            .alert(isPresented: $showingError) {
+                Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
+            }
+        }
+    }
+    
+    func getOffset(listProxy: GeometryProxy, itemProxy: GeometryProxy) -> CGFloat {
+        return max((itemProxy.frame(in: .global).minY - listProxy.frame(in: .global).minY) / listProxy.size.height * 100 - 45, 0)
     }
     
     func addNewWord() {
