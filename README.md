@@ -24,3 +24,4 @@ This repository contains the projects of the 100 Days Of SwiftUI by Paul Hudson.
 | 17 | HotProspects   | TabView, Result, objectWillChange, Custom EnvironmentObject, map(), filter(), CI QRCode | <img src="HotProspects/screenshots/screenshot-1.png" width="200"> |  An app to track who you meet at conferences with QR code scanning|
 | 18 | Flashzilla   | Accessibility, CoreHaptics, Gestures, Timers | <img src="Flashzilla/screenshots/screenshot-1.png" width="400"> |  Flash card app for learning |
 | 19 | Milestone Project 16-18   | Milestone Project 16-18 | <img src="MilestoneProject16-18/screenshots/screenshot-1.png" width="200"> |  Dice roll app |
+| 20 | SnowSeeker   | Layout neutral views, Split view, Alerts using optionals, Optimized UI for landscape and portrait | <img src="SnowSeeker/screenshots/screenshot-1.png" width="200"> |  Ski resort finder app |
